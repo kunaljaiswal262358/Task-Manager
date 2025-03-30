@@ -41,7 +41,6 @@ function App() {
       settemtodos([])
       settodo("")
     }
-    // console.log(todos)
     savetoLS()
   }
 
@@ -81,7 +80,7 @@ function App() {
   return (
     <>
       
-      <div className="md:container md:w-[35%] md:mx-auto h-[80vh] my-6 p-3 mx-5 bg-gray-100 shadow-md rounded-xl">
+      <div className="md:container md:w-[45%] md:mx-auto p-5 px-2 mx-5 h-[100vh] shadow-lg rounded-xl">
         <h1 className='text-2xl text-center'>Write Here Your Todos</h1>
         <div className='flex justify-center items-center'>
           <input className='px-2 p-3  w-[80%] my-2 rounded-xl' type="text" onChange={handleChange} value={todo} />
@@ -91,7 +90,7 @@ function App() {
         <label className='mx-2' htmlFor="show">Show Finished</label>
         <div className="divider h-[1px] bg-gray-500"></div>
         <div >
-          <div className="todos h-[55vh] overflow-auto">
+          <div className="todos h-[75vh] overflow-auto">
             {todos.length === 0 && <p>No todo is here</p>}
             {todos.map(item => {
               return (showFinished || !item.isCompleted) && <div key={item.id} className="todo flex my-3 justify-between items-center">
