@@ -3,7 +3,6 @@ import { stringify, v4 as uuidv4 } from 'uuid';
 import { CiEdit } from "react-icons/ci";
 import { MdDelete } from "react-icons/md";
 import './App.css'
-import './components/Navbar.jsx'
 
 function App() {
   const [todo, settodo] = useState("")
