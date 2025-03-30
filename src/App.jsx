@@ -80,7 +80,7 @@ function App() {
   return (
     <>
       
-      <div className="md:container md:w-[45%] md:mx-auto p-5 px-2 mx-5 h-[100vh] shadow-lg rounded-xl">
+      <div className="md:container md:w-[45%] md:mx-auto p-5 px-2 h-[100vh] shadow-lg rounded-xl">
         <h1 className='text-2xl text-center'>Write Here Your Todos</h1>
         <div className='flex justify-center items-center'>
           <input className='px-2 p-3  w-[80%] my-2 rounded-xl' type="text" onChange={handleChange} value={todo} />
