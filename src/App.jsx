@@ -83,7 +83,7 @@ function App() {
       <div className="md:container md:w-[45%] md:mx-auto p-5 px-2 h-[100vh] shadow-lg rounded-xl">
         <h1 className='text-2xl text-center'>Write Here Your Todos</h1>
         <div className='flex justify-center items-center'>
-          <input className='px-2 p-3  w-[80%] my-2 rounded-xl' type="text" onChange={handleChange} value={todo} />
+          <input className='px-2 p-3  w-[80%] border-2 my-2 rounded-xl' type="text" onChange={handleChange} value={todo} />
           <button disabled={todo.length <= 3} className=" disabled:bg-violet-600 mx-5  my-2 p-1 px-3 bg-violet-900 text-white rounded-2xl" onClick={(e) => { handleSave(e, temtodos) }} >Save</button>
         </div>
         <input type="checkbox" id='show' onChange={toggleFinished} checked={showFinished} />
